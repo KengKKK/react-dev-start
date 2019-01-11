@@ -4,7 +4,7 @@ Project @KMUTNB By KK#4 CED
 
 ## Getting Started
 
-* git clone {url}
+* git clone https://github.com/KengKKK/react-dev-start.git
 * cd react-start
 
 ### Installing
