@@ -22,23 +22,16 @@ export default class MyHeader extends Component {
                 />
                 <Menu.Item
                     as={NavLink}
-                    to="/table"
+                    to="/user"
                     name='user'
                     active={activeItem === 'user'}
                     onClick={this.handleItemClick}
                 />
                 <Menu.Item
                     as={NavLink}
-                    to="/manage"
+                    to="/admin"
                     name='admin'
                     active={activeItem === 'admin'}
-                    onClick={this.handleItemClick}
-                />
-                <Menu.Item
-                    as={NavLink}
-                    to="/common"
-                    name='redux'
-                    active={activeItem === 'redux'}
                     onClick={this.handleItemClick}
                 />
 

@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import {
-  home,
-  manage,
-  table,
-  common
-}  from './pages/index'
+  Home,
+  Admin,
+  User,
+} from './pages/index'
 
 import MyHeader from './pages/layout/header'
 
@@ -16,14 +15,13 @@ class App extends Component {
       <BrowserRouter>
 
         <div className="App">
-        <MyHeader/>
+          <MyHeader />
 
           <Switch>
-            <Route exact path="/" component={home} />
-            <Route exact path="/common" component={common} />
-            
-            <Route exact path="/manage" component={manage} />
-            <Route exact path="/table" component={table} />
+            <Route exact path="/" component={Home} />
+
+            <Route exact path="/admin" component={Admin} />
+            <Route exact path="/user" component={User} />
 
           </Switch>
 
