@@ -30,20 +30,15 @@ export class ModalShowValue extends React.Component {
                 <Modal
                     open={isOpen}
                     className="scrolling"
-                    size='mini'
+                    size="tiny"
                     centered
                 >
                     <Header icon='edit outline' content='Your Data Form Input' />
                     <Modal.Content>
-                        <p>
+            
                             {data.fname}
-                        </p>
-                        <p>
                             {data.lname}
-                        </p>
-                        <p>
                             {data.sex}
-                        </p>
 
                     </Modal.Content>
                     <Modal.Actions>

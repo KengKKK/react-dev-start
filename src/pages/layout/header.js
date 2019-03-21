@@ -29,9 +29,9 @@ export default class MyHeader extends Component {
                 />
                 <Menu.Item
                     as={NavLink}
-                    to="/admin"
-                    name='admin'
-                    active={activeItem === 'admin'}
+                    to="/get.Redux"
+                    name='getRedux'
+                    active={activeItem === 'getRedux'}
                     onClick={this.handleItemClick}
                 />
 

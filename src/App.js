@@ -3,8 +3,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import {
   Home,
-  Admin,
+  Redux,
   User,
+  Value
 } from './pages/index'
 
 import MyHeader from './pages/layout/header'
@@ -20,8 +21,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
 
-            <Route exact path="/admin" component={Admin} />
+            <Route exact path="/get.Redux" component={Redux} />
             <Route exact path="/user" component={User} />
+            <Route exact path="/value" component={Value} />
 
           </Switch>
 

@@ -38,7 +38,7 @@ class User extends Component {
 
     onSubmitClick = async () => {
         const { dispatch } = this.props
-        dispatch(setData(this.state.data))
+        await dispatch(setData(this.state.data))
         this.setState({
             callModal: true
         })
@@ -46,12 +46,12 @@ class User extends Component {
     }
 
     render() {
-        const { value, accept, callModal , data } = this.state
+        const { value, accept, callModal, data } = this.state
 
         return (
             <div className="container">
 
-                <ModalShowValue open={callModal} value={data}/>
+                <ModalShowValue open={callModal} value={data} />
 
                 <Form onSubmit={this.onSubmitClick}>
                     <Form.Group widths='equal'>

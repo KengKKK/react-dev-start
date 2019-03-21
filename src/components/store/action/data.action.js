@@ -13,9 +13,11 @@ export const getData = () => {
 
 export const setData = (data) => {
     return (dispatch) => {
-        return {
-            type: SET_DATA,
-            payload: data
-        }
+        return dispatch(
+            {
+                type: SET_DATA,
+                payload: data
+            }
+        )
     }
 }
